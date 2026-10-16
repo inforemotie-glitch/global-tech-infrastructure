@@ -1,0 +1,106 @@
+/* ==========================================================================
+   Global Tech Infrastructure: design tokens
+   Palette: espresso, walnut, beige and sand with a warm bronze accent.
+   ========================================================================== */
+
+:root {
+  /* Surfaces: light */
+  --bg-primary-beige: #F6F1E9;
+  --bg-secondary-sand: #EBE2D3;
+  --bg-surface-cream: #FFFDF9;
+
+  /* Surfaces: dark */
+  --bg-dark-espresso: #1C130E;
+  --bg-medium-roast: #2E2018;
+  --bg-deep-roast: #140D09;
+
+  /* Text */
+  --text-primary-dark: #1C130E;
+  --text-secondary-mocha: #523E33;
+  --text-on-dark-beige: #F6F1E9;
+  --text-on-dark-muted: #C9B9A6;
+
+  /* Accents
+     Bronze passes 3:1 for icons, borders and large text.
+     Copper is used for small text on light surfaces (5.3:1 on beige).
+     Bright bronze is used for text and focus on dark surfaces (7.4:1). */
+  --accent-warm-bronze: #A66E38;
+  --accent-hover-copper: #8A5828;
+  --accent-bronze-bright: #D09A62;
+  --accent-bronze-wash: rgba(166, 110, 56, 0.12);
+
+  /* Lines */
+  --border-subtle: #D8CBB8;
+  --border-dark: #423025;
+  --border-input: #8C7B6E; /* 4:1 on cream, 3.2:1 on sand, for form controls */
+
+  /* Status */
+  --status-operational: #2E6F40;
+  --status-operational-ink: #245A33; /* success text on tinted light surfaces */
+  --status-operational-bright: #6BBF84;
+  --status-error: #A23B2A;
+  --status-error-on-dark: #EFA28F;
+
+  /* Typography */
+  --font-display: "Archivo", "Arial Narrow", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-body: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  --fs-hero: clamp(2.15rem, 0.9rem + 5.6vw, 4.75rem);
+  --fs-h2: clamp(1.7rem, 1.1rem + 2.3vw, 2.9rem);
+  --fs-h3: clamp(1.12rem, 1rem + 0.5vw, 1.4rem);
+  --fs-metric: clamp(2.4rem, 1.6rem + 3vw, 3.75rem);
+  --fs-lead: clamp(1.05rem, 0.98rem + 0.35vw, 1.25rem);
+  --fs-body: clamp(0.97rem, 0.94rem + 0.15vw, 1.0625rem);
+  --fs-small: 0.875rem;
+  --fs-micro: 0.78rem;
+
+  --lh-tight: 1.04;
+  --lh-heading: 1.15;
+  --lh-body: 1.65;
+
+  --measure: 62ch;
+
+  /* Spacing */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+  --section-pad: clamp(4rem, 2.8rem + 5vw, 7.5rem);
+  --gutter: clamp(1rem, 4vw, 3rem);
+  --container: 1280px;
+
+  /* Shape: crisp corners for architecture, softer for devices */
+  --radius-xs: 3px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-pill: 999px;
+
+  /* Shadows: warm-tinted, used only on raised layers */
+  --shadow-raised: 0 1px 2px rgba(28, 19, 14, 0.06), 0 12px 32px -12px rgba(28, 19, 14, 0.22);
+  --shadow-float: 0 24px 64px -20px rgba(10, 6, 4, 0.55);
+  --shadow-ring: 0 0 0 1px var(--border-subtle);
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast: 160ms;
+  --dur-base: 280ms;
+  --dur-slow: 560ms;
+
+  /* Layers */
+  --z-header: 50;
+  --z-drawer: 80;
+  --z-toast: 120;
+
+  --header-h: 72px;
+
+  /* Photo treatment that pulls every image into the brown palette */
+  --photo-filter: sepia(0.62) saturate(0.7) contrast(1.05) brightness(0.92);
+
+  color-scheme: light;
+}
