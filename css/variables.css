@@ -1,0 +1,107 @@
+/* ==========================================================================
+   Global Tech Infrastructure: design tokens
+   Warm minimalist luxury: every surface is beige or cream. Dark brown is
+   reserved for type, buttons, icons, borders, badges and illustrations.
+   ========================================================================== */
+
+:root {
+  /* Canvas: beige only, layered for depth */
+  --bg-canvas-main: #F6F0E4;    /* primary page background */
+  --bg-canvas-alt: #EDE3D2;     /* alternating sections and bento containers */
+  --bg-card-surface: #FAF6EE;   /* raised cream cards and modules */
+  --bg-canvas-deep: #E3D6C1;    /* tracks, wells and pressed states */
+  --bg-input: #FDFAF4;          /* form fields, a touch lighter than cards */
+  --bg-glass-beige: rgba(250, 246, 238, 0.78);
+  --bg-glass-strong: rgba(250, 246, 238, 0.9);
+
+  /* Ink: dark brown for type and elements */
+  --ink-espresso-primary: #21150E;  /* headings, numbers, solid buttons */
+  --ink-roast-secondary: #3D281C;   /* subheads, widget frames, graphics */
+  --ink-mocha-body: #594132;        /* body copy, 7.4:1 on sand */
+  --ink-muted: #6E5544;             /* captions and meta, 6:1 on beige */
+  --accent-bronze-brown: #7A4E2D;   /* hover, progress, active indicators */
+  --on-ink: #FAF6EE;                /* text that sits on espresso buttons */
+
+  /* Lines */
+  --border-architectural: rgba(33, 21, 14, 0.14);
+  --border-soft: rgba(33, 21, 14, 0.08);
+  --border-strong-brown: #21150E;
+  --border-input: #8F7763;          /* 3.9:1 on cream for form controls */
+  --rail: rgba(33, 21, 14, 0.1);
+  --plus: rgba(61, 40, 28, 0.55);
+
+  /* Washes (beige tints of the bronze accent) */
+  --wash-bronze: rgba(122, 78, 45, 0.1);
+  --wash-bronze-strong: rgba(122, 78, 45, 0.18);
+
+  /* Feedback */
+  --err: #9B3522;
+  --err-wash: rgba(155, 53, 34, 0.09);
+  --ok-ink: #3D281C;
+
+  /* Depth */
+  --shadow-warm-brown: 0 20px 45px -15px rgba(33, 21, 14, 0.12), 0 4px 12px -2px rgba(33, 21, 14, 0.06);
+  --shadow-soft: 0 10px 24px -14px rgba(33, 21, 14, 0.16), 0 2px 6px -2px rgba(33, 21, 14, 0.05);
+  --shadow-lift: 0 32px 60px -24px rgba(33, 21, 14, 0.22), 0 8px 18px -6px rgba(33, 21, 14, 0.08);
+  --shadow-glass: inset 0 1px 0 rgba(255, 252, 245, 0.8), 0 18px 40px -18px rgba(33, 21, 14, 0.28);
+
+  /* Textures (4 to 6 percent espresso) */
+  --tex-dots: radial-gradient(rgba(33, 21, 14, 0.07) 1px, transparent 1.4px);
+  --tex-grid: linear-gradient(rgba(33, 21, 14, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(33, 21, 14, 0.05) 1px, transparent 1px);
+
+  /* Typography */
+  --font-display: "Fraunces", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  --font-body: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
+
+  --fs-hero: clamp(2.75rem, 1.55rem + 4.6vw, 5.25rem);
+  --fs-h2: clamp(2rem, 1.35rem + 2.4vw, 3.25rem);
+  --fs-h3: clamp(1.1rem, 1.02rem + 0.35vw, 1.3rem);
+  --fs-display-sm: clamp(1.6rem, 1.3rem + 1.1vw, 2.15rem);
+  --fs-metric: clamp(2.3rem, 1.7rem + 2.3vw, 3.5rem);
+  --fs-lead: clamp(1.08rem, 1rem + 0.35vw, 1.28rem);
+  --fs-body: clamp(0.98rem, 0.95rem + 0.15vw, 1.0625rem);
+  --fs-small: 0.9rem;
+  --fs-micro: 0.78rem;
+  --fs-mono: 0.72rem;
+
+  --lh-tight: 1.02;
+  --lh-heading: 1.12;
+  --lh-body: 1.65;
+
+  --measure: 60ch;
+
+  /* Spacing */
+  --section-pad: clamp(5rem, 9vw, 8.5rem);
+  --card-pad: clamp(2rem, 1.6rem + 1vw, 2.5rem);
+  --gutter: clamp(1rem, 4vw, 3rem);
+  --container: 1280px;
+  --rail-gap: 0px;
+
+  /* Shape: crisp, architectural */
+  --r-xs: 6px;
+  --r-sm: 10px;
+  --r-md: 14px;
+  --r-lg: 20px;
+  --r-xl: 26px;
+  --r-pill: 999px;
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast: 180ms;
+  --dur-base: 320ms;
+  --dur-slow: 640ms;
+
+  /* Layers */
+  --z-header: 50;
+  --z-drawer: 80;
+  --z-toast: 120;
+
+  --header-h: 76px;
+
+  /* Warm photo grade that keeps imagery inside the beige palette */
+  --photo-filter: sepia(0.16) saturate(0.9) contrast(1.02);
+
+  color-scheme: light;
+}
