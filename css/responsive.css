@@ -1,0 +1,397 @@
+/* ==========================================================================
+   Global Tech Infrastructure: breakpoint enhancements
+   Base styles are mobile first. Each block below only adds layout.
+   ========================================================================== */
+
+@media (min-width: 480px) {
+  .glass-card--team {
+    display: flex;
+  }
+
+  .trust-badges {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .priority__name {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .phone-card__actions .btn,
+  .email-card__actions .btn {
+    flex: 1 1 auto;
+  }
+}
+
+@media (min-width: 640px) {
+  .site-header__cta {
+    display: inline-flex;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .form-grid,
+  .callback__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .field--full {
+    grid-column: 1 / -1;
+  }
+
+  .blueprint__sla {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .zone-picker {
+    grid-template-columns: repeat(4, auto);
+    justify-content: start;
+  }
+
+  .site-footer__top {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .site-footer__brand {
+    grid-column: 1 / -1;
+  }
+
+  .sla-tiles {
+    grid-template-columns: 1fr;
+  }
+
+  .service-dialog__foot {
+    gap: 1rem;
+    padding: 1rem var(--card-pad);
+  }
+
+  .service-dialog__ctas {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+  }
+
+  .service-dialog__ctas .btn--outline {
+    width: auto;
+    padding: 0.75rem 1.35rem;
+  }
+
+  .service-dialog__ctas .btn__label {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip-path: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .utility-bar__links {
+    display: flex;
+  }
+
+  .status-line__resp {
+    display: inline;
+  }
+
+  .metrics__list {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .metric {
+    padding: 2.75rem 1.25rem;
+    border: 0 !important;
+  }
+
+  .metric + .metric {
+    border-left: 1px solid var(--line-soft) !important;
+  }
+
+  .compare {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .trust-banner {
+    grid-template-columns: 156px minmax(0, 1fr);
+  }
+
+  .trust-badges {
+    grid-column: 1 / -1;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .hero__visual {
+    padding: 0 0 3.5rem 3rem;
+  }
+
+  .hero__inset {
+    width: 36%;
+  }
+
+  .glass-card--uptime {
+    top: 2rem;
+  }
+
+  .glass-card--soc {
+    right: 1.5rem;
+    bottom: 1rem;
+  }
+
+  .timeline {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 2rem;
+    row-gap: 2rem;
+  }
+
+  .timeline__step {
+    padding-bottom: 0;
+  }
+
+  .timeline__step::after {
+    display: none;
+  }
+
+  .service-dialog__cover {
+    aspect-ratio: 21 / 8;
+  }
+
+  .accordion__inner p {
+    padding-right: 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero__inner {
+    grid-template-columns: minmax(0, 1.02fr) minmax(0, 1fr);
+  }
+
+  .hero__photo {
+    aspect-ratio: 4 / 4.6;
+  }
+
+  .hero__visual {
+    padding: 0 0 3.5rem 3.5rem;
+  }
+
+  .hero__inset {
+    width: 40%;
+  }
+
+  .section-head--split {
+    grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+    align-items: end;
+    column-gap: 4rem;
+  }
+
+  .section-head--split .section-head__lead {
+    justify-self: end;
+    max-width: 38ch;
+  }
+
+  .split-cta {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+  }
+
+  .split-cta__media {
+    aspect-ratio: auto;
+    min-height: 100%;
+  }
+
+  .split-cta__body {
+    padding: clamp(2.5rem, 2rem + 2vw, 4rem);
+  }
+
+  .trust-banner {
+    grid-template-columns: 156px minmax(0, 1fr) minmax(0, 1.25fr);
+    gap: 2.5rem;
+  }
+
+  .trust-badges {
+    grid-column: auto;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .onboarding {
+    grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  }
+
+  .onboarding__photo {
+    aspect-ratio: 4 / 4.8;
+  }
+
+  .tabs__panel {
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  }
+
+  .tabs__content {
+    padding: 1rem clamp(1rem, 2vw, 2.5rem) 1rem 0;
+  }
+
+  .estimator__layout {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+    gap: 2rem;
+  }
+
+  .blueprint {
+    position: sticky;
+    top: calc(var(--header-h) + 1.5rem);
+  }
+
+  .testimonial__figure {
+    grid-template-columns: minmax(0, 1fr) 15rem;
+    align-items: stretch;
+  }
+
+  .contact-email__layout {
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    gap: 2rem;
+  }
+
+  .email-card {
+    position: sticky;
+    top: calc(var(--header-h) + 1.5rem);
+  }
+
+  .dispatch__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: stretch;
+    gap: 2rem;
+  }
+
+  .dispatch__bottom {
+    grid-template-columns: minmax(0, 1.4fr) minmax(0, 0.6fr);
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .zone-card__photo {
+    aspect-ratio: 16 / 5;
+  }
+
+  .zone-card__layout {
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+    gap: 2rem;
+  }
+
+  .zone-picker {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hours-card__media {
+    flex: 1 1 auto;
+    min-height: 220px;
+    aspect-ratio: auto;
+  }
+
+  .faq__layout {
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+    gap: 5rem;
+  }
+
+  .faq__head {
+    position: sticky;
+    top: calc(var(--header-h) + 2rem);
+  }
+
+  .service-dialog__grid {
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+    gap: 2.5rem;
+  }
+
+  .site-footer__top {
+    grid-template-columns: minmax(0, 1.4fr) repeat(3, minmax(0, 1fr));
+    gap: 3rem;
+  }
+
+  .site-footer__brand {
+    grid-column: auto;
+  }
+}
+
+@media (min-width: 1100px) {
+  .primary-nav {
+    display: block;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .services-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1.5rem;
+  }
+
+  .service-card__body {
+    padding: 2.4rem 1.75rem 2rem;
+  }
+
+  .service-card__icon {
+    left: 1.75rem;
+  }
+
+  .glass-card--team {
+    right: -1.5rem;
+  }
+}
+
+@media (min-width: 1360px) {
+  .header-phone {
+    display: inline-flex;
+  }
+}
+
+/* ---------- Reduced motion ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .js .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* ---------- Print ---------- */
+
+@media print {
+  .utility-bar,
+  .site-header,
+  .mobile-drawer,
+  .drawer-backdrop,
+  .filter-bar,
+  .carousel__controls,
+  .toast-region,
+  .service-card__more,
+  .hero__visual,
+  form {
+    display: none !important;
+  }
+
+  body {
+    background: #FFFFFF;
+    color: #000000;
+  }
+
+  .section {
+    padding-block: 1.5rem;
+  }
+
+  .js .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}
